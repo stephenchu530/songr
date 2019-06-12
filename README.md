@@ -50,7 +50,7 @@ I LOVE JAVA
 
 example input:
 ```
-localhost:8080/capitalize/I love Java
+localhost:8080/reverse/sentence=I love Java
 ```
 
 example output:
