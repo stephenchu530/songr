@@ -13,10 +13,50 @@ or
 ```
 
 ## Usage
+*STEP 1:* To start the server:
 ```
  $ ./gradlew bootRun
 ```
-Then go to `localhost:8080` in your favorite browser
+*STEP 2:* Then do one of the following in your favorite browser URL bar:
+
+#### Hello:
+`localhost:8080/hello`
+
+example input:
+```
+localhost:8080/hello
+```
+
+example output:
+```
+Hello, World!
+```
+
+#### Capitalize:
+`localhost:8080/capitalize/{string}`
+
+example input:
+```
+localhost:8080/capitalize/I love Java
+```
+
+example output:
+```
+I LOVE JAVA
+```
+
+#### Reverse:
+`locahost:8080/reverse/sentence={string}`
+
+example input:
+```
+localhost:8080/capitalize/I love Java
+```
+
+example output:
+```
+Java love I
+```
 
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
