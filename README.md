@@ -58,6 +58,12 @@ example output:
 Java love I
 ```
 
+#### See All Albums
+In your browser URL bar, go to: `localhost:8080/allAlbums`
+
+#### Add new album
+In your browser URL bar, go to: `localhost:8080/addAlbum`
+
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
 
