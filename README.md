@@ -58,6 +58,11 @@ example output:
 Java love I
 ```
 
+## Songr App:
+Launch server with:
+```
+ $ ./gradlew bootRun
+```
 #### See All Albums
 In your browser URL bar, go to: `localhost:8080/allAlbums`
 
