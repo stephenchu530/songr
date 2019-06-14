@@ -25,6 +25,8 @@ public class Song {
     }
 
     public void setTitle(String title) {
+        if (title.isEmpty())
+            title = "No Title";
         this.title = title;
     }
 
