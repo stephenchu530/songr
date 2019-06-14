@@ -1,9 +1,7 @@
 package cool.chu.steve.songr;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Album {
@@ -15,6 +13,8 @@ public class Album {
     int songCount;
     int length;
     String imageURL;
+    @OneToMany(mappedBy = "album")
+    List<Song> songs;
 
     public Album() {}
 
@@ -72,7 +72,7 @@ public class Album {
 
     public void setImageURL(String imageURL) {
         if (imageURL.isEmpty())
-            imageURL = "No Image";
+            imageURL = "https://cdn.onlinewebfonts.com/svg/img_148071.png";
         this.imageURL = imageURL;
     }
 }
