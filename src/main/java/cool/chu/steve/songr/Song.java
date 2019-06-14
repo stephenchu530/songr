@@ -13,6 +13,8 @@ public class Song {
     @ManyToOne
     private Album album;
 
+    public Song() {}
+
     public Song(long id, String title, int length, int trackNumber, Album album) {
         this.setTitle(title);
         this.setLength(length);
