@@ -14,10 +14,10 @@ public class Song {
     private Album album;
 
     public Song(long id, String title, int length, int trackNumber, Album album) {
-        this.title = title;
-        this.length = length;
-        this.trackNumber = trackNumber;
-        this.album = album;
+        this.setTitle(title);
+        this.setLength(length);
+        this.setTrackNumber(trackNumber);
+        this.setAlbum(album);
     }
 
     public String getTitle() {
@@ -33,6 +33,8 @@ public class Song {
     }
 
     public void setLength(int length) {
+        if (length < 0)
+            length = 0;
         this.length = length;
     }
 
@@ -41,6 +43,8 @@ public class Song {
     }
 
     public void setTrackNumber(int trackNumber) {
+        if (trackNumber < 0)
+            trackNumber = 0;
         this.trackNumber = trackNumber;
     }
 
