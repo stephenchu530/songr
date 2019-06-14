@@ -7,13 +7,13 @@ import java.util.List;
 public class Album {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    private long id;
     String title;
     String artist;
     int songCount;
     int length;
     String imageURL;
-    @OneToMany(mappedBy = "album")
+    @OneToMany(mappedBy = "album", cascade = CascadeType.ALL)
     List<Song> songs;
 
     public Album() {}
@@ -24,6 +24,10 @@ public class Album {
         this.setSongCount(songCount);
         this.setLength(length);
         this.setImageURL(imageURL);
+    }
+
+    public long getId() {
+        return this.id;
     }
 
     public String getTitle() {
@@ -74,5 +78,9 @@ public class Album {
         if (imageURL.isEmpty())
             imageURL = "https://cdn.onlinewebfonts.com/svg/img_148071.png";
         this.imageURL = imageURL;
+    }
+
+    public List<Song> getSongs() {
+        return this.songs;
     }
 }

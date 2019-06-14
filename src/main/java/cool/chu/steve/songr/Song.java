@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Song {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    private long id;
     private String title;
     private int length;
     private int trackNumber;
@@ -15,7 +15,7 @@ public class Song {
 
     public Song() {}
 
-    public Song(long id, String title, int length, int trackNumber, Album album) {
+    public Song(String title, int length, int trackNumber, Album album) {
         this.setTitle(title);
         this.setLength(length);
         this.setTrackNumber(trackNumber);
