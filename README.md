@@ -63,11 +63,12 @@ Launch server with:
 ```
  $ ./gradlew bootRun
 ```
-#### See All Albums
-In your browser URL bar, go to: `localhost:8080/allAlbums`
+#### How to use Songr App
+* In your browser URL bar, go to: `localhost:8080/allAlbums`
 
-#### Add new album
-In your browser URL bar, go to: `localhost:8080/addAlbum`
+* From here, you can add a new album.
+
+* After adding a new album, you can add new songs.
 
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
